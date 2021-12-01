@@ -18,7 +18,7 @@ To learn more about Next.js, take a look at the following resources:
 ## Open 
 http://localhost:3085
 
-## ERROR: ENOSPC: SYSTEM LIMIT FOR NUMBER OF FILE WATCHERS REACHED
+## In case you have the error: ENOSPC: SYSTEM LIMIT FOR NUMBER OF FILE WATCHERS REACHED
 
 SOLUÇÃO
 Aumentar o limite de user watches no sistema operacional.
