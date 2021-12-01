@@ -8,6 +8,7 @@ module.exports = withImages({
 const { PHASE_DEVELOPMENT_SERVER } = require('next/constants');
 
 module.exports = phase => {
+    //production api
     let REACT_APP_URL = process.env.REACT_APP_URL || 'https://originweb.com.br';
     let REACT_APP_WS = process.env.REACT_APP_WS || 'wss://originweb.com.br';
     let REACT_APP_URL_GRAPHQL = `${REACT_APP_URL}/graphql`;
@@ -16,7 +17,7 @@ module.exports = phase => {
     let REACT_APP_URL_SERVER = '';
     let REACT_APP_URL_GRAPHQL_SERVER = ``;
 
-    //dev
+    //dev api
     if (phase === PHASE_DEVELOPMENT_SERVER && !process.env.REACT_APP_URL) {
         REACT_APP_URL = 'http://localhost:3000';
         REACT_APP_WS = `ws://localhost:3000`;
