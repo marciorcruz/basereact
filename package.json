@@ -1,5 +1,5 @@
 {
-  "name": "sumbdash",
+  "name": "basedash",
   "private": true,
   "scripts": {
     "dev": "next dev --port 3085",

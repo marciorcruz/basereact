@@ -11,7 +11,7 @@ const config = { ...publicRuntimeConfig, ...serverRuntimeConfig };
 let splitLink: ApolloLink = null;
 const getToken = () => {
     if (process.browser) {
-        const token = process.browser ? localStorage?.getItem('@SumB:token') : null;
+        const token = process.browser ? localStorage?.getItem('@base:token') : null;
         return token;
     }
     return '';

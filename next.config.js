@@ -8,8 +8,8 @@ module.exports = withImages({
 const { PHASE_DEVELOPMENT_SERVER } = require('next/constants');
 
 module.exports = phase => {
-    let REACT_APP_URL = process.env.REACT_APP_URL || 'https://gadico.com.br';
-    let REACT_APP_WS = process.env.REACT_APP_WS || 'wss://gadico.com.br';
+    let REACT_APP_URL = process.env.REACT_APP_URL || 'https://originweb.com.br';
+    let REACT_APP_WS = process.env.REACT_APP_WS || 'wss://originweb.com.br';
     let REACT_APP_URL_GRAPHQL = `${REACT_APP_URL}/graphql`;
     let REACT_APP_WS_GRAPHQL = `${REACT_APP_WS}/graphql`;
     let NEXT_PUBLIC_RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || '';
@@ -47,7 +47,7 @@ module.exports = phase => {
         i18n,
         images: {
             domains: [
-                'gadico.com.br',
+                'originweb.com.br',
             ],
         },
 
